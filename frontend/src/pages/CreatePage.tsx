@@ -2,6 +2,7 @@ import { useState, type ChangeEvent, type FormEvent } from "react";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
+import NavBar from "../components/NavBar";
 
 interface CreateForm {
   title: string;
@@ -67,6 +68,7 @@ const CreatePage: React.FC = () => {
 
   return (
     <div className="max-w-screen-xl mx-auto flex h-screen">
+      <NavBar/>
       <div className="flex-1 flex flex-col justify-center items-center px-4">
         <form
           className="flex flex-col gap-4 w-full max-w-md"
