@@ -65,7 +65,7 @@ const SignupPage: React.FC = () => {
 			<div className="max-w-screen-xl mx-auto flex h-screen items-center justify-center px-4">
         <div className="w-full max-w-md">
           <form className="flex flex-col gap-4 w-full" onSubmit={handleSubmit}>
-            <h1 className="text-4xl font-extrabold text-white text-center">Join today.</h1>
+            <h1 className="text-4xl font-extrabold text-black text-center">Join today.</h1>
 
             {/* Email */}
             <label className="input input-bordered rounded flex items-center gap-2 w-full">
@@ -134,7 +134,7 @@ const SignupPage: React.FC = () => {
           </form>
 
           <div className="flex flex-col gap-2 mt-4 text-center">
-            <p className="text-white text-lg">Already have an account?</p>
+            <p className="text-black text-lg">Already have an account?</p>
             <Link to="/login">
               <button className="btn rounded-full btn-primary text-black btn-outline w-full">Sign in</button>
             </Link>
