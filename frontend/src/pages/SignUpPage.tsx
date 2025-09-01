@@ -136,7 +136,7 @@ const SignupPage: React.FC = () => {
           <div className="flex flex-col gap-2 mt-4 text-center">
             <p className="text-white text-lg">Already have an account?</p>
             <Link to="/login">
-              <button className="btn rounded-full btn-primary text-white btn-outline w-full">Sign in</button>
+              <button className="btn rounded-full btn-primary text-black btn-outline w-full">Sign in</button>
             </Link>
           </div>
         </div>
