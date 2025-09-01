@@ -23,13 +23,13 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser()); 
 
 
-app.use("/api/notes", notesRoutes);
+app.use("/api/notes", notesRoutes); 
 app.use("/api/auth", authRoutes);
 
 const __dirname1 = path.resolve();
 app.use(express.static(path.join(__dirname1, "/frontend/dist")));
 
-app.get("*", (req, res) => {
+app.get(/.*/, (req, res) => {
   res.sendFile(path.join(__dirname1, "/frontend/dist/index.html"));
 });
 
