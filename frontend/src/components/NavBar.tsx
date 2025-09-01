@@ -25,7 +25,7 @@ const NavBar: React.FC = () => {
   return (
     <header className="fixed top-0 left-0 w-full bg-transparent backdrop-blur-md border-b border-white/10 z-50">
       <div className="mx-auto max-w-6xl px-6 py-3">
-        <div className="flex items-center justify-between text-black">
+        <div className="flex items-center justify-between">
           <h1 className="text-3xl font text-white">Dashboard</h1>
           <div className="flex items-center gap-4">
             <button
