@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 
 const NoPendingTasks: React.FC = () => {
-  const { data, isLoading, isError } = useQuery({
+  const { isLoading } = useQuery({
     queryKey: ["me"],
     queryFn: async () => {
       const token = localStorage.getItem("token");
