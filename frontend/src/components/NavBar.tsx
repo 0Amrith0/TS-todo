@@ -25,8 +25,8 @@ const NavBar: React.FC = () => {
   return (
     <header className="fixed top-0 left-0 w-full bg-transparent backdrop-blur-md border-b border-white/10 z-50">
       <div className="mx-auto max-w-6xl px-6 py-3">
-        <div className="flex items-center justify-between text-black">
-          <h1 className="text-3xl font text-white">Dashboard</h1>
+        <div className="flex items-center justify-between">
+          <h1 className="text-3xl font text-black">Dashboard</h1>
           <div className="flex items-center gap-4">
             <button
               onClick={(e) => {
@@ -34,7 +34,7 @@ const NavBar: React.FC = () => {
                 logoutMutation();
               }}
               className="flex items-center gap-2 bg-transparent hover:bg-white/20 
-              text-white px-4 py-2 rounded-md transition"
+              text-black px-4 py-2 rounded-md transition"
             >
               <BiLogOut className="h-5 w-5" />
               <span>Sign out</span>
