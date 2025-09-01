@@ -63,7 +63,7 @@ const LoginPage: React.FC = () => {
     <div className="max-w-screen-xl mx-auto flex h-screen">
       <div className="flex-1 flex flex-col justify-center items-center px-4">
         <form className="flex gap-4 flex-col w-full max-w-sm" onSubmit={handleSubmit}>
-          <h1 className="text-4xl font-extrabold text-white">{"Let's"} go.</h1>
+          <h1 className="text-4xl font-extrabold text-black">{"Let's"} go.</h1>
 
           <label className="input input-bordered rounded flex items-center gap-2">
             <MdOutlineMail size={20} />
