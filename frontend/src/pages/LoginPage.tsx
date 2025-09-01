@@ -105,9 +105,9 @@ const LoginPage: React.FC = () => {
         </form>
 
         <div className="flex flex-col gap-2 mt-4 w-full max-w-sm">
-          <p className="text-white text-lg">{"Don't"} have an account?</p>
+          <p className="text-black text-lg">{"Don't"} have an account?</p>
           <Link to="/signup">
-            <button className="btn rounded-full btn-primary text-white btn-outline w-full">
+            <button className="btn rounded-full btn-primary text-black btn-outline w-full">
               Sign up
             </button>
           </Link>
