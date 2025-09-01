@@ -26,13 +26,14 @@ app.use(cookieParser());
 app.use("/api/notes", notesRoutes); 
 app.use("/api/auth", authRoutes);
 
-const __dirname1 = path.resolve();
-app.use(express.static(path.join(__dirname1, "/frontend/dist")));
+if (process.env.NODE_ENV === "production") {
+  const frontendPath = path.join(__dirname, "../../frontend/dist");
+  app.use(express.static(frontendPath));
 
-app.get(/.*/, (req, res) => {
-  res.sendFile(path.join(__dirname1, "/frontend/dist/index.html"));
-});
-
+  app.get("/*", (req, res) => {
+    res.sendFile(path.resolve(frontendPath, "index.html"));
+  });
+}
 
 app.listen(PORT, async () => {
   try {
