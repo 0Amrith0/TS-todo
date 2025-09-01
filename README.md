@@ -4,20 +4,16 @@ A fullstack MERN application with TypeScript, Express, MongoDB, and React (Vite)
 This project contains both the **backend** (Express + MongoDB) and the **frontend** (React + Vite) inside one repository.
 
 
-Highway_Delite/
-│
-├── backend/ # Backend (Node.js + Express + MongoDB)
-│ ├── src/ # TypeScript source files
-│ ├── dist/ # Compiled JS (after build)
-│ ├── package.json
-│
-├── frontend/ # Frontend (React + Vite + TypeScript)
-│ ├── src/ # React components & pages
-│ ├── dist/ # Production build output
-│ ├── package.json
-│
-└── README.md # This file
-
+==> Highway_Delite/
+  => backend/ # Backend (Node.js + Express + MongoDB)
+    > src/ # TypeScript source files
+    > dist/ # Compiled JS (after build)
+    > package.json
+  => frontend/ # Frontend (React + Vite + TypeScript)
+    > src/ # React components & pages
+    > dist/ # Production build output
+    > package.json
+==> README.md # This file
 
 ## 🚀 Setup Instructions
 
